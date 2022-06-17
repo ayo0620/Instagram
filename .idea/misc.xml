@@ -8,13 +8,17 @@
         <entry key="app/src/main/res/drawable-anydpi-v24/ic_homebtn.xml" value="0.1805" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2115" />
         <entry key="app/src/main/res/drawable/bg_gradient.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.1785" />
+        <entry key="app/src/main/res/drawable/ic_baseline_comment_24.xml" value="0.1785" />
+        <entry key="app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1785" />
+        <entry key="app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1785" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2115" />
         <entry key="app/src/main/res/drawable/ic_launcher_btnHome_background.xml" value="0.2115" />
         <entry key="app/src/main/res/drawable/ic_launcher_btnHome_foreground.xml" value="0.2115" />
         <entry key="app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.2095" />
         <entry key="app/src/main/res/drawable/splash_background.xml" value="0.131" />
         <entry key="app/src/main/res/layout/activity_comment.xml" value="0.20833333333333334" />
-        <entry key="app/src/main/res/layout/activity_detail.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_detail.xml" value="0.375" />
         <entry key="app/src/main/res/layout/activity_feed.xml" value="0.22447916666666667" />
         <entry key="app/src/main/res/layout/activity_first_fragment.xml" value="0.1953125" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.203125" />

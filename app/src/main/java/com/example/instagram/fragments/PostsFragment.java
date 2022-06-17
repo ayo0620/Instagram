@@ -30,6 +30,7 @@ public class PostsFragment extends Fragment {
     protected List<Post> allPosts;
     private SwipeRefreshLayout swipeContainer;
 
+
     public PostsFragment() {
         // Required empty public constructor
     }

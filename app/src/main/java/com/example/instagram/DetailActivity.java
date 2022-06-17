@@ -46,11 +46,11 @@ public class DetailActivity extends AppCompatActivity {
         tvCreatedAt = findViewById(R.id.tvTimeStamp);
 //        ibLikes = findViewById(R.id.ibLikes);
         ibComment = findViewById(R.id.ibComment);
-        rvComments = findViewById(R.id.rvComments);
+//        rvComments = findViewById(R.id.rvComments);
 //        tvLikeCounts = findViewById(R.id.tvlikeCounts);
 //        adapter = new CommentsAdapter();
-        rvComments.setLayoutManager(new LinearLayoutManager(this));
-        rvComments.setAdapter(adapter);
+//        rvComments.setLayoutManager(new LinearLayoutManager(this));
+//        rvComments.setAdapter(adapter);
 
         post = Parcels.unwrap(getIntent().getParcelableExtra(Post.class.getSimpleName()));
 
