@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:layout_margin="16dp"
     tools:context=".LoginActivity">
 
@@ -11,12 +12,13 @@
         android:id="@+id/etUserName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPopUpText"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="5dp"
         android:ems="10"
+        android:inputType="textPersonName"
         android:hint="Username" />
 
     <EditText
@@ -25,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/etUserName"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="0dp"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:ems="10"
         android:hint="password"
@@ -37,8 +39,21 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/etPassword"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="0dp"
+        android:backgroundTint="@color/instagram_blue"
         android:text="Login" />
+
+    <TextView
+        android:id="@+id/tvPopUpText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="5dp"
+        app:drawableStartCompat="@drawable/instagram_image" />
 </RelativeLayout>
