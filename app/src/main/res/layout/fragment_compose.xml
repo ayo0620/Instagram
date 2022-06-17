@@ -13,7 +13,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="128dp"
         android:layout_marginBottom="50dp"
-        android:layout_toEndOf="@+id/btnFeed"
+        android:layout_toEndOf="@+id/btnSumbit"
         android:text="Log Out"
         android:theme="@style/Theme.Material3.DayNight" />
 
@@ -21,10 +21,13 @@
         android:id="@+id/etDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/ivPostImage"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="-5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="-3dp"
         android:ems="10"
         android:hint="Description..." />
 
@@ -32,15 +35,14 @@
         android:id="@+id/btnCaptureImage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/etDescription"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="32dp"
         android:backgroundTint="@color/material_dynamic_neutral_variant70"
-        android:text="Take picture" />
+        android:text="Take a picture" />
 
     <ImageView
         android:id="@+id/ivPostImage"
@@ -53,23 +55,14 @@
 
     <Button
         android:id="@+id/btnSumbit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/ivPostImage"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="32dp"
-        android:backgroundTint="@color/material_dynamic_neutral_variant70"
-        android:text="Submit" />
-
-    <Button
-        android:id="@+id/btnFeed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="36dp"
         android:layout_marginBottom="50dp"
-        android:text="Go to Feed"
-        android:theme="@style/Theme.Material3.DayNight" />
+        android:theme="@style/Theme.Material3.DayNight"
+        android:text="Post" />
+
+
 </RelativeLayout>

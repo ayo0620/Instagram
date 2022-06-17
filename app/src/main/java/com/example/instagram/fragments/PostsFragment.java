@@ -30,7 +30,6 @@ public class PostsFragment extends Fragment {
     protected List<Post> allPosts;
     private SwipeRefreshLayout swipeContainer;
 
-
     public PostsFragment() {
         // Required empty public constructor
     }
@@ -76,6 +75,8 @@ public class PostsFragment extends Fragment {
     }
 
     private void queryPosts() {
+
+        adapter.clear();
         // specify what type of data we want to query - Post.class
         ParseQuery<Post> query = ParseQuery.getQuery(Post.class);
         // include data referred by user key

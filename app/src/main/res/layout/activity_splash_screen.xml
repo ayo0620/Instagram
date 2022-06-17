@@ -26,7 +26,7 @@
         android:layout_below="@+id/imageView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="62dp"
-        android:text="MyInstagram"
+        android:text="Instagram"
         tools:layout_editor_absoluteX="164dp"
         tools:layout_editor_absoluteY="427dp" />
 </RelativeLayout>

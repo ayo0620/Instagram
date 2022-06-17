@@ -39,9 +39,18 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     public static final String TAG = "MainActivity";
-    private BottomNavigationView bottomNavigationView;
-    final FragmentManager fragmentManager =  getSupportFragmentManager();
-    Fragment fragment;
+    public BottomNavigationView bottomNavigationView;
+    FragmentManager fragmentManager;
+
+    PostsFragment postFragment = new PostsFragment();
+    ComposeFragment composeFragment = new ComposeFragment(this);
+    ProfileFragment profileFragment = new ProfileFragment();
+
+    public void goToProfileTab(User user){
+
+        bottomNavigationView.setSelectedItemId(R.id.action_profile);
+        profileFragment.user = user;
+    }
 
 
     @Override
@@ -50,23 +59,28 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+        fragmentManager =  getSupportFragmentManager();
+
+
         bottomNavigationView = findViewById(R.id.bottom_nav);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                Fragment fragment = null;
                 switch (menuItem.getItemId()) {
                     case R.id.action_home:
                         Toast.makeText(MainActivity.this,"home!",Toast.LENGTH_SHORT).show();
-                        fragment = new PostsFragment();
+                        fragment = postFragment;
                         break;
                     case R.id.action_compose:
                         Toast.makeText(MainActivity.this,"compose!",Toast.LENGTH_SHORT).show();
-                        fragment = new ComposeFragment();
+                        fragment = composeFragment;
                         break;
                     case R.id.action_profile:
                         Toast.makeText(MainActivity.this,"profile!",Toast.LENGTH_SHORT).show();
-                        fragment = new ProfileFragment();
+                        profileFragment.user = (User) ParseUser.getCurrentUser();
+                        fragment = profileFragment;
                         break;
                     default:
                         break;

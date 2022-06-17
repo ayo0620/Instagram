@@ -9,13 +9,17 @@ import com.parse.ParseUser;
 
 import org.parceler.Parcel;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @ParseClassName("Post")
 public class Post extends ParseObject {
     public static final String KEY_DESCRIPTION = "Description";
     public static final String KEY_IMAGE = "Image";
     public static final String KEY_USER = "user";
+    public static final String KEY_LIKED_BY = "likedBy";
+
 
     public String getDescription()
     {
@@ -47,6 +51,26 @@ public class Post extends ParseObject {
         put(KEY_USER, parseObject);
     }
 
+    public String likeCountDisplayText()
+    {
+        String likesText = String.valueOf(getLikedBy().size());
+        likesText = getLikedBy().size() == 1 ? " like" : "likes";
+        return likesText;
+    }
+
+    public List<String> getLikedBy(){
+        List<String> likedBy = getList(KEY_LIKED_BY);
+        if(likedBy == null)
+        {
+            likedBy = new ArrayList<>();
+        }
+        return likedBy;
+    }
+
+    public void setLikedBy(List<String> likedBy)
+    {
+        put(KEY_LIKED_BY, likedBy);
+    }
 
     public String calculateTimeAgo(Date createdAt) {
 
