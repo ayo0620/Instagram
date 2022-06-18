@@ -31,7 +31,8 @@ public class SignUpActivity extends AppCompatActivity {
         btSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ParseUser user = new ParseUser();
+                User user = new User();
+//                ParseUser user = new ParseUser();
                 user.setUsername(String.valueOf(etUsername.getText()));
                 user.setPassword(String.valueOf(etPassword.getText()));
 
