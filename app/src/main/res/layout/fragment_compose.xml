@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".fragments.ComposeFragment">
 
     <Button
@@ -28,6 +29,9 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="-3dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
         android:ems="10"
         android:hint="Description..." />
 

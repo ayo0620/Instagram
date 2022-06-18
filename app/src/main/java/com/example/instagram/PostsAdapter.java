@@ -133,8 +133,6 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> 
                         post.setLikedBy(likeBy);
                         Drawable newImage = context.getDrawable(R.drawable.ic_white_favorite);
                         ibFavoritePost.setImageDrawable(newImage);
-                        likeText = String.valueOf(post.likeCountDisplayText());
-                        likeCount = String.valueOf(likeBy.size());
                         tvfavoriteCount.setText("likes");
                     }
                     post.saveInBackground();
