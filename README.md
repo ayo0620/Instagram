@@ -50,7 +50,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/ayo0620/Instagram/commit/da5cbae654d115cee5da7f1aebb2f7e32b2d8d5a' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/ayo0620/Instagram/blob/master/ezgif.com-gif-maker-2.mov' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [Kap](https://getkap.co/).
 
